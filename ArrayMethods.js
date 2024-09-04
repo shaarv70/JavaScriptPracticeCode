@@ -85,6 +85,23 @@ console.log(color.indexOf("red",2));
 let test=["admin","customer","seller","vendor"];
 console.log(test.includes("customer"));
 
+//every() - check for every element
+let num3=[1,2,36,8,0,5,6,4,3,34,4];
+let check=num3.every((e) => e<10 );
+console.log(check);//false
+
+// some()- chek atleast one element passes the condition
+let num2=[1,2,36,8,0,5,6,4,3,34,4];
+  let check1=num2.some((e) => e%2===0);
+  console.log(check1);
+
+//find() - returns the value which satify the given condiition
+let mine=[1,2,36,8,0,5,6,4,3,34,4]; 
+let check3=mine.find((e) => e>10);
+console.log(check3);//36
+
+
+
 //foreach
 
 let n=[1,2,3,34,5,5,6,];
