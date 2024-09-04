@@ -26,8 +26,8 @@ console.log(f)
 //console.log(r)
 
 //unshift - Add element to the beginning 
-f.unshift(78)
-console.log(f)
+f.unshift(78,"blue");
+console.log("after unshift"+f);
 
 //delete - it will not effect the array length
 let myarray=[1,2,3,4,5]
@@ -61,7 +61,7 @@ const compare=(a,b)=>{
 
 //splice - to add new items in array
 let result=l.splice(2,3,1023,1023,1021)//(start,kitne remove krne h,add kro jo add krna h un places pr)
-console.log(l)
+console.log("After splice"+l)
 console.log(result)//it will return thr array of deleted elements
 
 //slice - it will give me an array according to the arguments(like a substring)- it will not 
@@ -69,3 +69,33 @@ console.log(result)//it will return thr array of deleted elements
 const z=[1,23,34,56,76,89,97,56]
 console.log(z.slice(1,3))
 console.log(z.slice(3))
+
+
+//index of
+
+let color=["blue","red","pink","gold","red"];
+console.log(color.indexOf("blue"));
+console.log(color.indexOf("gold"));
+console.log(color.indexOf("arvind"));//returns -1
+console.log(color.lastIndexOf("red"));//or
+console.log(color.indexOf("red",2));
+
+//includes
+
+let test=["admin","customer","seller","vendor"];
+console.log(test.includes("customer"));
+
+//foreach
+
+let n=[1,2,3,34,5,5,6,];
+n.forEach((e) => {
+
+   console.log(e);
+   console.log(e*2);
+
+})
+
+
+
+
+

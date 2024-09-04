@@ -36,3 +36,18 @@ let obj=
         console.log(a)   //it will print 9 and 3 one by one 
                           //only strings
       }
+   const arr=[2,4,2,4,5,3,5];
+   for(const e of arr){
+    
+    if(e==1){
+    console.log(e);
+     break;
+    }}
+
+for(const c in arr){
+
+  console.log(c)//it will show the index
+  console.log(arr[c]);
+}
+
+     
