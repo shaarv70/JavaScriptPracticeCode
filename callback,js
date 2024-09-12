@@ -45,10 +45,10 @@ function fetUserID(userID,callback){
 
         const myuser=user[userID];
           if(myuser){
-            userData(null,myuser);
+            callback(null,myuser);
         }  
         else{
-            userData("user not found",null);
+            callback("user not found",null);
         }
     },2000);
 }
@@ -63,7 +63,7 @@ function fetUserID(userID,callback){
 
     }
 
-    fetUserID(3,userData);
+    fetUserID(2,userData);
 
 
 
