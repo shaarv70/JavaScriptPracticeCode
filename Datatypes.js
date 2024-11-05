@@ -42,14 +42,12 @@ console.log(msg);
 msg="55";
 console.log(msg);
 
-
-
 function rel(){
 
   var top="hello";
   console.log(top);
 }
-//console.log(top); throw error
+rel();//print hello
 
 d= "my arvind";
 console.log(d);
