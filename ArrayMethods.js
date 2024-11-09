@@ -100,6 +100,11 @@ let mine=[1,2,36,8,0,5,6,4,3,34,4];
 let check3=mine.find((e) => e>10);
 console.log(check3);//36
 
+//Array.from
+let chah ="Arvind"
+let arr=Array.from(chah);//It will create an array of letters of String
+console.log(arr)//[ 'A', 'r', 'v', 'i', 'n', 'd' ]
+
 
 
 //foreach

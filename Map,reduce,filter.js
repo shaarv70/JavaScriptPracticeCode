@@ -78,7 +78,7 @@ console.log(sum);
 //maximum element in array
 let y=[1,23,5,7,6,4,34];
 
-let maximum=y.reduce((max,x) =>{
+let maximum=y.reduce((max,x) =>{     //(maximum value,current value)
 
      if(x>max)
         return x;

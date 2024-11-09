@@ -5,17 +5,17 @@ console.log(result);
 const state= () => "hi";  //no parameter
 console.log(state());
 
-const add =(a,b) => a+b;   // multiple parameter
+const add =(a,b) => a+b;   // multiple parameter   //implicit return
 const addition=add(2,3);
 console.log(addition);
 
-const person={
+const man={
 
     first: "Arvind",
     lastname: "Sharma"
 }
 const details=person => `${person.first} ${person.lastname}`
-const name=details(person);
+const name=details(man);
 console.log(name);
 
 //
@@ -27,7 +27,7 @@ console.log(Age1);
 const Age2=great("Tom",23);
 console.log(Age2);
 
-//rest parameters    ... varargs
+//rest parameters    ... varargs - like an array
 const sum=(...numbers) => numbers.reduce((acc,num) => acc + num,0);
 const adding=sum(1,2,3,3,4,4,5,5);
 console.log(adding);
@@ -52,6 +52,7 @@ const findmax=(a,b,c) => {
 };
 const maximum=findmax(10,20,30);
 console.log(maximum);
+console.log(findmax(2,4,8));
 
 
 

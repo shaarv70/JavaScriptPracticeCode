@@ -11,8 +11,8 @@ num.forEach((element)=>{
     console.log(element*element)
 })
 //Array.from
-let name ="Arvind"
-let arr=Array.from(name)//It will create an array of letters of String
+let chah ="Arvind"
+let arr=Array.from(chah);//It will create an array of letters of String
 console.log(arr)//[ 'A', 'r', 'v', 'i', 'n', 'd' ]
 
 //for...of(short method to access the memebrs of array )

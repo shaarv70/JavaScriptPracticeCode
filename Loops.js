@@ -25,7 +25,7 @@
     shivi:34,
     arvind:67
   }
-   for (let a in obj)
+   for (let a in obj)// iof we take for of in this case then it will throw error 
       {
         console.log(a)//it will print key one by one
         console.log(obj[a])//it will print value one by one

@@ -45,7 +45,8 @@ const hello=()=>
   {
     console.log("hi my function")
   }
-console.log(hello())
+  hello();
+console.log(hello()) //same
 
 const mystring=()=>
   {
