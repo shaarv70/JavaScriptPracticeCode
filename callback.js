@@ -18,10 +18,10 @@ greet("arvind",welcome);
 
 
 //callback function with async function/process 
-function printInfo(name,callback){
+function printInfo(myname,callback){
     //async function/task/step:
     setTimeout(function() {
-        console.log("printing info for "+name);
+        console.log("printing info for "+myname);
         callback("plz call me back");
     }, 500);  //delay of 5000ms/5s
 }

@@ -96,7 +96,7 @@ console.log(final);
 
 //13. join array elements into string
 
-const a1=["hello","world"];
+const a1=["hello","world", "iam", "coming"]
 const a2=a1.join(' ');
 console.log(a2);
 const a3=a1.join(' bye ');
@@ -161,14 +161,15 @@ const valus=Object.values(emp);
  }
 
 
- //19. trucate an array
+ //19. trucate an array-  return an array
 
  const testing=[0,1,2,3,4,5,6,7];
  testing.length=3;
  console.log(testing);
 
- //20. last item in array
+ //20. last item in array - return in array
 
  const poping=[0,1,2,3,4,5,6,7];
   const last=poping.slice(-1);
   console.log(last);
+  console.log(poping.pop());
