@@ -21,7 +21,7 @@ setTimeout(()=>{
 getEvenNumber(4,1000).then(result =>{
 
 console.log("step1: Getting the result with even number: ",result);
-return getEvenNumber(6,2000);
+return getEvenNumber(7,2000);
 
 }).then(result=>{
 

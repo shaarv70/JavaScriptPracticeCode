@@ -23,7 +23,7 @@ function printInfo(myname,callback){
     setTimeout(function() {
         console.log("printing info for "+myname);
         callback("plz call me back");
-    }, 500);  //delay of 5000ms/5s
+    }, 4000);  //delay of 5000ms/5s
 }
 
 function displayMessage(mesg){
@@ -37,7 +37,7 @@ printInfo("arvind",displayMessage);
 //
 function fetUserID(userID,callback){
 
-    setTimeout(function(){             //async function
+    setTimeout(()=>{             //async function
         const user={
             1:{id:1,name:"arvind"},
             2:{id:2,name:"tom"}

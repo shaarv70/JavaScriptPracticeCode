@@ -14,7 +14,8 @@ const randomNumber=new Promise((resolve,reject)=>{
     },2000);
 
 });
-//whenever promise is fullfilled then then block executes otherwise if promise is returning reject then catch block executes
+/* whenever promise is fullfilled then then block executes otherwise if promise is returning reject then 
+catch block executes */
 randomNumber.then(result =>{     //handler
 
     console.log("promise is fulfilled with the value: ",result);
