@@ -35,7 +35,7 @@ const sum=(a,b)=>{
 }
 console.log(sum(9,7)) //or
 
-const test=(x,y) => x/y;
+const test=(x,y) => x/y;    // implicitly return is calling
 const div=test(3,2);
 console.log(div);
 
