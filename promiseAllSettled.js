@@ -3,6 +3,11 @@ with an array of result objects, one for each promise
 Each result contains:
 a status (either "fulfilled" or "rejected") and 
 a value (fulfilled value) or reason (rejection reason)
+
+har ek promise ke liye do cheez return hgi status and value
+
+
+
 */
 
 const getData=()=>{
@@ -36,7 +41,7 @@ then(results=>{
     else
         {
 
-            console.log("Reason for rejection: ",result.reason)
+            console.log("Reason for rejection: ",result.reason,result.status);
         }
    })
     

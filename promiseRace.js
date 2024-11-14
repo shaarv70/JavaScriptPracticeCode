@@ -23,7 +23,7 @@ const rejectPromise=()=>{
     });
 };
 
-//in thisncase it will return reject promise since reject promise executes first having 500ms
+//in thisncase it will return resolve promise since resolve promise executes first having 300ms
 Promise.race([resolvePromise(),rejectPromise()]).
 then(result =>{
     console.log("result:",result);

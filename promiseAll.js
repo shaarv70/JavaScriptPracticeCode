@@ -1,5 +1,6 @@
 //promise.all will give the result of all promises
-
+//note: Promise.all handles only when all promises are resolved 
+//In this case we have one rejected promise so we will get the o/p from catch only
 //case1. : all promises resolved 
 
 const function1=()=>{
@@ -66,8 +67,7 @@ const getError=()=>{
             },2000);
     });
 }
-//note: Promise.all handles only when all promises are resolved 
-//In this case we have one rejected promise so we will get the o/p from catch only
+
 Promise.all([getData(),getError()]).
 then(result =>{
     console.log("all data fetched");

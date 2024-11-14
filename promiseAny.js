@@ -10,7 +10,7 @@ const function1=()=>{
         setTimeout(()=>{
                 // resolve("Data from function 1");
                 const data=[1,2,3,4];
-                resolve(data); 
+                reject(data); 
             },500);
     });
 }
@@ -32,7 +32,7 @@ const function3=()=>{
         setTimeout(()=>{
                     //resolve("Data from function 3");
                     const data=[9,10,11,12];
-                resolve(data); 
+                reject(data); 
                 },1000);
     });
 };

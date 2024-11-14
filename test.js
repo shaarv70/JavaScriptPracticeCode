@@ -1,19 +1,17 @@
-const randomNumber= new Promise((resolve,reject)=>{
-const value=10;
-     if(value>3)
-     {
-        resolve(value);
-     }
-     else{
-        reject(new Error("This is wrong number"));
-     }
-});
+class Check{
 
-randomNumber.then(result=>{
+static #age;
+constructor(mane,age){
 
-    console.log("this value is correct"+result);
-}).catch(check=>{
+    this.mane=mane;
+    Check.#age=age;
+}
 
+getAge()
+{
+    return Check.#age;
+}
+}
 
-    console.log("The error is :"+check);
-})
+const c1 = new Check("Arvind",30);
+console.log(c1.getAge());
