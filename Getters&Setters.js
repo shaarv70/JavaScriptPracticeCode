@@ -11,7 +11,7 @@ class Person {
   
     // Setter for full name
     set fullName(name) {
-      const [first, last] = name.split(" ");
+      const [first, last] = name.split(" ");  // concept of destructring
       this.firstName = first;
       this.lastName = last;
     }

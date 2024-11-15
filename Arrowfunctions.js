@@ -27,7 +27,7 @@ console.log(Age1);
 const Age2=great("Tom",23);
 console.log(Age2);
 
-//rest parameters    ... varargs - like an array
+//rest parameters    ... varargs - like an array/spread operator
 const sum=(...numbers) => numbers.reduce((acc,num) => acc + num,0);
 const adding=sum(1,2,3,3,4,4,5,5);
 console.log(adding);
