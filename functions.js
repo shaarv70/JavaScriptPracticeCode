@@ -90,7 +90,7 @@ const final=numbers.map(function(e){
 
   return e*e;
 }) 
-console.log(final)
+console.log(final);
 
 
 //recursive function

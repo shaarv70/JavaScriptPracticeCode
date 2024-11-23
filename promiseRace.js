@@ -1,4 +1,4 @@
- /*Promise.Race() will give the output for which promise execution first comletes
+ /*Promise.Race() will give the output for which promise execution first completes
  it doesnt mattter whether the promise is fulfilled or rejected*/
 
 
