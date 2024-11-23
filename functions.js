@@ -10,8 +10,8 @@ function myfunc(x,y)
 }
 console.log("the value of functions is:"+myfunc(2,3))
 
-//Anonymous function
-const check=function my(x,y){
+//Anonymous function - without any name
+const check=function (x,y){
 
   return x*y;
 }
