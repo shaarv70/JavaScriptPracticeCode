@@ -1,3 +1,5 @@
+//=>-- this is a fat arrow or lamda function
+
 const square = num => num *num;  //if we have one parameter
 const result=square(2);
 console.log(result);
