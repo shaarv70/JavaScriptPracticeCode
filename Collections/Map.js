@@ -5,7 +5,7 @@ Allows Duplicate Keys:no
 Allows Duplicate Values:yes 
 Accepts Heterogeneous:yes
 Thread-Safe:no
-Best Use Case:key-value pairs
+Best Use Case:key-value pairs(keys can be of any type)
 */
 
 const map = new Map();
