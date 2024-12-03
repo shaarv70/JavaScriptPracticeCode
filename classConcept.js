@@ -1,3 +1,6 @@
+// Inside class we cannot use var, let and const
+
+
 class Car{
 
   constructor(name,price,model,color) //In js we dont have to name the contructor same as the classname llike java 
