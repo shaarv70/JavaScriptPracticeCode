@@ -1,4 +1,4 @@
-// Inside class we cannot use var, let and const
+// Inside class we cannot use var, let and const but can be used inside the function present in that class
 
 
 class Car{
