@@ -17,11 +17,27 @@ console.log(c[7])
  {
     console.log(c[i])
  }
-
-
+ 
  let g = new Array(8); // Creates an array with 8 empty slots
 g = [1, 2, 3, 3, 4, 4, 5, 5]; // Populates the array with specific values
 console.log(g); // Outputs: [1, 2, 3, 3, 4, 4, 5, 5]
+
+
+let browsers=[
+
+{    "name":"Chrome",
+      "version":80
+ },
+ {
+   "name":"firefox",
+   "version":90
+}
+]
+
+console.log(browsers[0].version);
+
+
+
 
  
  

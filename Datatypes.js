@@ -1,58 +1,99 @@
-console.log("Different datatypes are var,let and const");
+//Primitive datatype
+//nn bb ss u(null,number,byte,BigInt,String,Symbol,undefined)
+ let a=null;
+let b=346;
+let c=true;
+//let d=BigInt("567")+b;//throw error
+let d= BigInt("567")+BigInt("6");
+let e= "Harry";
+let f= Symbol("I am a nice symbol");
+let g= undefined;
+console.log(a,b,c,d,e,f,g);
+//typeof : it will give the result in string 
+console.log(typeof d);
 
-let a=45;
-var b="Arvind";
-var c=null;
-var d=undefined;
-{
-  var b="this"; 
-  let k="chenu";
+// object  it will store value in form of key and pair and key must be always in string, values can be of any type
+const item= {
+     "Harry":true,
+     "Shubh":false,
+     "Lovish":67,
+     "Rohan":undefined,
+     fun:()=>{
+          console.log("Hi this is from object!!");
+               }
 }
-//console.log(k);//it will throw error
-console.log(b);//it will also print this
+console.log(typeof item)
+console.log(item);
+console.log(item["Shubh"])//it will show the value of shubh
+console.log(item.Harry);
+item.fun();
 
-//var can be redeclared and reinitialized
-//let is blocked scoped
-//let cannot be redecalred but can be reinitiliazed.
-//const value cannot be reinitilaized and redclared
-//const has to initialized at the time of declaring
-const author="Harry";
-//author="Arvind"; thirow error
-//var should not be used in JS or issue with var
 
-var flag= "hey";
-var t1=4;
+//constructor function
+function car(brand,model,price){
+     this.brand=brand;
+     this.model=model;
+     this.price=price;
+};
+console.log(typeof car);//function
+const c1=new car("BMW","520d",10000);
+console.log(c1.brand+" "+c1.price);
 
-if(t1>3){
 
-  var flag ="check";
+// class style
+
+class Customer{
+
+     constructor(name,product){
+          this.name=name;
+          this.product=product;
+     }
+
+    addTOCart(){
+
+     console.log(`${this.product} added to cart`);
+    }
 }
+ 
+     const cust= new Customer("Arvind","Chips");
+    console.log(cust.name +" "+ cust.product);
+    cust.addTOCart();
 
-console.log(flag); //cannot show flag original value again
-//so let is mostly used
 
-let msg= "Hi";
-let time=4;
+    // Object.create(): with some prototype object
 
-if(time>3){
+    const employeePrototype={
+     
+     printInfo:function(){
 
-  let msg="check";
-}
-console.log(msg);
-msg="55";
-console.log(msg);
+          console.log(`Hello Employee name is ${this.name}`);
+     } 
+     }
+    
+     const e1=Object.create(employeePrototype);
+     e1.name="tommy";
+     e1.printInfo();
 
-function rel(){
 
-  var top="hello";
-  console.log(top);
-}
-rel();//print hello
+     //Usig factory functions:it is a special function which return object always
+      
+     function dept(name,head){
+     
+          return {
 
-d= "my arvind";
-console.log(d);
+               deptName:name,
+               Hod:head,
+               printInfo:function(){
 
-var g
-console.log(typeof(g))
-g=null;
-console.log(g);
+                    console.log(`Hello dept name is ${this.deptName} and hod is ${this.Hod}`);
+               } 
+               
+          }
+      }
+
+      const d1=dept("Physics","Rakesh");
+      d1.printInfo();
+      console.log(d1.deptName+" "+d1.Hod);
+
+
+
