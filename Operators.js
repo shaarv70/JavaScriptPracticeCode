@@ -25,6 +25,13 @@ console.log(c===d)// false
 console.log(c!=d);//false
 console.log(c!==d);//true
 
+let k="2";
+let l= new String("2");
+
+console.log(k==l);
+console.log(k===l);
+
+
 //Logical operator
 let x=5;
 let y=6;
