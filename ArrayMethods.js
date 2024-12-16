@@ -18,7 +18,14 @@ console.log(num)
 
 let f=[1,2,3,4]
 f.push("Arvind")
+f.push("Manoj","Ramu",23);
 console.log(f)
+
+//fill - it will replace all the array values with the fill value
+
+console.log(f.fill(2));
+console.log(num.fill(0,1,2));
+
 
 //shift - remove first element and returs it
 
@@ -39,7 +46,7 @@ let v =[1,3,45,5,6,45]
 let x=["Arvind","raju","Anju"]
  let newarray=v.concat(myarray)
  console.log(newarray)
- let y=v.concat(x,newarray)
+ let y=v.concat(x,newarray,[0,1,2]);
  console.log(y)
 
 

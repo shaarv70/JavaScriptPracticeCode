@@ -22,8 +22,8 @@ class Person {
   console.log(person.fullName); // Output: Alice Smith
   
   // Using the setter
-  person.fullName = "John Doe";
+  person.fullName="John Doe"; //here setter method is also considered as a varible
   console.log(person.firstName); // Output: John
   console.log(person.lastName);  // Output: Doe
-  console.log(person.fullName);  // Output: John Doe
+  console.log(person.fullName);  // Output: John Doe  //here we dont need to use brackets for getter method
   
