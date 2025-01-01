@@ -108,7 +108,7 @@ let check3=mine.find((e) => e>10);
 console.log(check3);//36
 
 //Array.from
-let chah ="Arvind"
+let chah ="Arvind Sharma"
 let arr=Array.from(chah);//It will create an array of letters of String
 console.log(arr)//[ 'A', 'r', 'v', 'i', 'n', 'd' ]
 
